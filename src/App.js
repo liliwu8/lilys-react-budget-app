@@ -1,7 +1,7 @@
-// // DEPENDENCIES
+ // DEPENDENCIES
 import { Routes, Route } from 'react-router-dom'
 
-// // PAGES
+// PAGES
 import Edit from './Pages/Edit'
 import FourOFour from './Pages/FourOFour'
 import Home from './Pages/Home'
@@ -21,7 +21,7 @@ function App() {
           <Route path='/transactions/new' element={<New />} />
           <Route path='transactions/:index' element={<Show />} />
           <Route path='/transactions/:index/edit' element={<Edit />} />
-          <Route element={<FourOFour />} />
+          <Route path='*' element={<FourOFour />} />
         </Routes>
       </main>
     </div>

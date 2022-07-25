@@ -6,9 +6,8 @@ function NavBar() {
       <h1>
         <Link to='/transactions'>Transactions</Link>
       </h1>
-      <h1>Account Total</h1>
       <h1>
-        <Link to='/transactions/new'>New Bookmark</Link>
+        <Link to='/transactions/new'>New Transaction</Link>
       </h1>
     </nav>
   )

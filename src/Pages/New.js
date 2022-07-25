@@ -1,8 +1,10 @@
+import NewTransactionForm from '../Components/NewTransactionsForm'
+
 function New() {
   return (
     <div className='New'>
-      <h2>New</h2>
-      {/* <BookmarkNewForm /> */}
+      <h2>Add a new item</h2>
+      <NewTransactionForm />
     </div>
   )
 }
