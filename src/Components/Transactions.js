@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Transaction from './Transaction'
+import './Transactions.css'
 const API = process.env.REACT_APP_API_URL
 
 function Transactions() {
@@ -22,25 +23,36 @@ function Transactions() {
   // }, 0)
 
   const total = (amount) => {
-    let array = []
     let amt = 0
     for (let sum of amount) {
       if (typeof sum.amount === 'string') {
-        array.push(parseInt(sum.amount))
+        amt += parseInt(sum.amount)
       } else {
-        array.push(sum.amount)
+        amt += sum.amount
       }
     }
-    for (let arr of array) {
-      amt += arr
-    }
-    return parseInt(amt)
+    return amt
   }
-  
+
+  let colorNum = (amount) => {
+    if (amount >= 1000) {
+      return 'green'
+    } else if (amount <= 1000 && amount >= 0) {
+      return 'grey'
+    } else {
+      return 'red'
+    }
+  }
+
   return (
     <div className='Transactions'>
       <section>
-        <h1>Bank Amount Total: {dollarUSLocale.format(total(transactions))}</h1>
+        <h1>
+          Bank Amount Total:{' '}
+          <span className={colorNum(total(transactions))}>
+            {dollarUSLocale.format(total(transactions))}
+          </span>
+        </h1>
         <table>
           <tbody>
             {transactions.map((transaction, index) => {
