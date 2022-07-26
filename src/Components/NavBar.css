@@ -1,0 +1,9 @@
+nav {
+  background: #C1F5E0;
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: start; */
+  padding: 1em;
+  box-shadow: 2px 2px 4px grey;
+  margin-bottom: 1em;
+}
