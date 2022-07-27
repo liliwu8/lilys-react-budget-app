@@ -1,9 +1,13 @@
 nav {
-  background: #C1F5E0;
+  background: #c1f5e0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   /* align-items: start; */
   padding: 1em;
   box-shadow: 2px 2px 4px grey;
   margin-bottom: 1em;
+}
+
+nav a:hover {
+  color: #7DCE13;
 }

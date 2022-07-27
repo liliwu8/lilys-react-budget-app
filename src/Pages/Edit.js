@@ -3,7 +3,7 @@ import TransactionsEditForm from "../Components/TransactionsEditForm"
 function Edit() {
   return (
     <div className='New Edit'>
-      <h2>Edit</h2>
+      <h2>Edit Transaction</h2>
       <TransactionsEditForm />
     </div>
   )

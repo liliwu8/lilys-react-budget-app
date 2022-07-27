@@ -3,7 +3,7 @@ import NewTransactionForm from '../Components/NewTransactionsForm'
 function New() {
   return (
     <div className='New'>
-      <h2>Add a new item</h2>
+      <h2>Add a new transaction</h2>
       <NewTransactionForm />
     </div>
   )

@@ -1,10 +1,20 @@
-.red{
-    color: red;
+.red {
+  color: red;
 }
-.grey{
-    color: grey;
+.grey {
+  color: grey;
 }
 
-.green{
-    color:green;
+.green {
+  color: green;
+}
+
+.table {
+  margin-right: auto;
+
+  margin-left: auto;
+
+  border-collapse: separate;
+  
+  border-spacing: 0 15px;
 }

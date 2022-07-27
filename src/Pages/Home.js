@@ -1,7 +1,7 @@
 function Home() {
   return (
     <div className='Home'>
-      <h2>Welcome to Budget App!</h2>
+      <h2>Welcome to Ensured Budget App!</h2>
     </div>
   )
 }

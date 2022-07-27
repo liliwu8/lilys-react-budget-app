@@ -53,7 +53,7 @@ function Transactions() {
             {dollarUSLocale.format(total(transactions))}
           </span>
         </h1>
-        <table>
+        <table className='table'>
           <tbody>
             {transactions.map((transaction, index) => {
               return (

@@ -44,6 +44,7 @@ function TransactionsDetails() {
       <p>Name: {transaction.item_name}</p>
       <p>Amount: {transaction.amount}</p>
       <p>From: {transaction.from}</p>
+      <p>Category: {transaction.category}</p>
       <div className='showNavigation'>
         <Link to={`/transactions`}>
           <button>Back</button>

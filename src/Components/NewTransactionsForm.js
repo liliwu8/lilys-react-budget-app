@@ -12,16 +12,17 @@ function NewTransactionForm() {
     from: '',
   })
 
+ 
+
   const handleTextChange = (event) => {
     setTransaction({ ...transaction, [event.target.id]: event.target.value })
   }
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    console.log('dfdf')
     axios
       .post(`${API}/transactions`, transaction)
-        .then(() => {
+      .then(() => {
         navigate('/transactions')
       })
       .catch((err) => {
@@ -37,9 +38,9 @@ function NewTransactionForm() {
           id='date'
           name='date'
           value={transaction.date}
-          type='text'
+          type='date'
           onChange={handleTextChange}
-          placeholder='date'
+          // placeholder='date'
           required
         />
         <br />

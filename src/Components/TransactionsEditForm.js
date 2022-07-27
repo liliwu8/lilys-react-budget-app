@@ -45,8 +45,7 @@ function TransactionsEditForm() {
         console.warn(err)
       })
   }
-    
-     
+
   return (
     <div className='New'>
       <form onSubmit={handleSubmit}>
@@ -56,9 +55,9 @@ function TransactionsEditForm() {
           id='date'
           name='date'
           value={transactions.date}
-          type='text'
+          type='date'
           onChange={handleTextChange}
-          placeholder='date'
+          // placeholder='date'
           required
         />
         <br />

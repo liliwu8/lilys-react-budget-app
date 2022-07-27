@@ -1,0 +1,11 @@
+td {
+  width: 300px;
+  text-align: center;
+  /* border: 1px solid black; */
+  padding: 5px;
+}
+
+
+a:hover{
+color: #5BB318;
+}
