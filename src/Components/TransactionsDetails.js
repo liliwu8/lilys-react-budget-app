@@ -40,7 +40,7 @@ function TransactionsDetails() {
   }
 
   return (
-    <article>
+    <article className='transactions-info'>
       <p>Date: {formatDate}</p>
       <p>Name: {transaction.item_name}</p>
       <p>Amount: {transaction.amount}</p>

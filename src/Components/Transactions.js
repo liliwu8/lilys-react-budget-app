@@ -47,12 +47,12 @@ function Transactions() {
   return (
     <div className='Transactions'>
       <section>
-        <h1>
+        <h2>
           Bank Amount Total:{' '}
           <span className={colorNum(total(transactions))}>
             {dollarUSLocale.format(total(transactions))}
           </span>
-        </h1>
+        </h2>
         <table className='table'>
           <tbody>
             {transactions.map((transaction, index) => {

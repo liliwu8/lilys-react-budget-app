@@ -6,6 +6,14 @@ td {
 }
 
 
-a:hover{
+ a:hover{
 color: #5BB318;
+}
+
+a:link{
+  color: #14C38E;
+}
+
+ a:visited {
+  color: #3CCF4E;
 }

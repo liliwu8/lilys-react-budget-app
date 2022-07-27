@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { useNavigate, useParams, Link } from 'react-router-dom'
+import './TransactionsEditForm.css'
 const API = process.env.REACT_APP_API_URL
 
 function TransactionsEditForm() {
@@ -101,7 +102,7 @@ function TransactionsEditForm() {
         />
         <br />
         <br />
-        <input type='submit' />
+        <button>Submit</button>
       </form>
       <br />
       <Link to={`/transactions/${index}`}>

@@ -1,12 +1,13 @@
 .red {
   color: red;
 }
+
 .grey {
-  color: grey;
+  color: tan;
 }
 
-.green {
-  color: green;
+span.green {
+  color: #14C38E;
 }
 
 .table {
@@ -17,4 +18,8 @@
   border-collapse: separate;
   
   border-spacing: 0 15px;
+
+  color: #5B8A72;
+  
+  font-weight: 900;
 }
