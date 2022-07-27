@@ -11,9 +11,8 @@ function NewTransactionForm() {
     date: '',
     amount: 0,
     from: '',
+    category: '',
   })
-
- 
 
   const handleTextChange = (event) => {
     setTransaction({ ...transaction, [event.target.id]: event.target.value })
@@ -41,7 +40,7 @@ function NewTransactionForm() {
           value={transaction.date}
           type='text'
           onChange={handleTextChange}
-          placeholder="MM/DD/YYYY"
+          placeholder='MM/DD/YYYY'
           required
         />
         <br />
@@ -85,6 +84,19 @@ function NewTransactionForm() {
         />
         <br />
         <br />
+        <label htmlFor='from'>Category</label>
+        <br />
+        <input
+          id='category'
+          name='category'
+          value={transaction.category}
+          onChange={handleTextChange}
+          type='text'
+          placeholder='category'
+          required
+        />
+        <br />
+        <br/>
         <input type='submit' value='CREATE NEW ITEM' className='button' />
       </form>
     </div>

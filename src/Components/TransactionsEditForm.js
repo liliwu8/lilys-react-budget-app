@@ -13,6 +13,7 @@ function TransactionsEditForm() {
     date: '',
     amount: 0,
     from: '',
+    category: '',
   })
 
   useEffect(() => {
@@ -98,6 +99,19 @@ function TransactionsEditForm() {
           onChange={handleTextChange}
           type='text'
           placeholder='from'
+          required
+        />
+        <br />
+        <br />
+        <label htmlFor='from'>Category</label>
+        <br />
+        <input
+          id='category'
+          name='category'
+          value={transactions.category}
+          onChange={handleTextChange}
+          type='text'
+          placeholder='category'
           required
         />
         <br />
