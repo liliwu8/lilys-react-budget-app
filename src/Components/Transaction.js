@@ -2,11 +2,14 @@ import { Link } from 'react-router-dom'
 import './Transaction.css'
 
 function Transaction({ transaction, index }) {
+ //formate for the dates 
   let formatDate = new Date(transaction.date).toLocaleDateString('en-US', {
     month: 'short',
     day: 'numeric',
     year: 'numeric',
   })
+  
+  //formate for the $ comma and decimal place
   let dollarUSLocale = Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',

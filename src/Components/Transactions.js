@@ -13,6 +13,7 @@ function Transactions() {
     })
   }, [])
 
+  //a format to for $, comma ,and decimals
   let dollarUSLocale = Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
@@ -22,6 +23,11 @@ function Transactions() {
   //   return pre + curr.amount
   // }, 0)
 
+  /**
+   * this higher order func is to find a string to convert into number and add to get teh sum
+   * @param {Number} amount data amount 
+   * @returns Number 
+   */
   const total = (amount) => {
     let amt = 0
     for (let sum of amount) {
@@ -34,6 +40,11 @@ function Transactions() {
     return amt
   }
 
+  /**
+   * colorNum is to color number on certain condiiton 
+   * @param {Number} amount  amount in data for each price
+   * @returns 
+   */
   let colorNum = (amount) => {
     if (amount >= 1000) {
       return 'green'
