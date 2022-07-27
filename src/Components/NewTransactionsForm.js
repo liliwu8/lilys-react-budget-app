@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import './NewTransactionsForm.css'
 const API = process.env.REACT_APP_API_URL
 
 function NewTransactionForm() {
@@ -84,7 +85,7 @@ function NewTransactionForm() {
         />
         <br />
         <br />
-        <input type='submit' value='CREATE NEW ITEM' />
+        <input type='submit' value='CREATE NEW ITEM' className='button' />
       </form>
     </div>
   )

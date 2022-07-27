@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import './TransactionsDetails.css'
 let API = process.env.REACT_APP_API_URL
 
 function TransactionsDetails() {
@@ -47,12 +48,12 @@ function TransactionsDetails() {
       <p>Category: {transaction.category}</p>
       <div className='showNavigation'>
         <Link to={`/transactions`}>
-          <button>Back</button>
+          <button className='button'>Back</button>
         </Link>{' '}
         <Link to={`/transactions/${index}/edit`}>
-          <button>Edit</button>
+          <button className='button'>Edit</button>
         </Link>{' '}
-        <button onClick={handleDelete}>Delete</button>
+        <button onClick={handleDelete} className='delete'>Delete</button>
       </div>
     </article>
   )
