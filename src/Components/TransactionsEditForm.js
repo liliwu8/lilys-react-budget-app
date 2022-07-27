@@ -50,15 +50,15 @@ function TransactionsEditForm() {
   return (
     <div className='New'>
       <form onSubmit={handleSubmit}>
-        <label htmlFor='date'> Date</label>
+        <label htmlFor='date'>Date</label>
         <br />
         <input
           id='date'
           name='date'
           value={transactions.date}
-          type='date'
+          type='text'
           onChange={handleTextChange}
-          // placeholder='date'
+          placeholder='MM/DD/YYYY'
           required
         />
         <br />

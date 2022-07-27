@@ -39,9 +39,9 @@ function NewTransactionForm() {
           id='date'
           name='date'
           value={transaction.date}
-          type='date'
+          type='text'
           onChange={handleTextChange}
-          // placeholder='date'
+          placeholder="MM/DD/YYYY"
           required
         />
         <br />
